@@ -23,7 +23,7 @@ public class Fitbit {
         d.pic_URL__c= result.user.avatar150;
         insert d;
     }
-  
+  //private static
     private static HttpResponse getRequest(String url) {
         HttpRequest req = new HttpRequest();
         Http http = new Http();
