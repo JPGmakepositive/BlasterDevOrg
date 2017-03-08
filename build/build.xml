@@ -14,14 +14,14 @@
     ====================================== -->
     <property environment="env" />
     <property name="path" value="../" />    
-    <property name="source" value="/src"/>
+    <property name="source" value="${path}/src"/>
 
     <!-- Salesforce constants
     ====================================== -->
     <property name="sf.maxPoll" value="50000" />    
     <property name="sf.maxWaitMillis" value="50000" />   
 
-    <target name="zip-and-deploy">
+    <target name="zip-and-deploy" depends="build">
         <echo>******** Deployment ********</echo>
         <sf:deploy 
             username="${username}" 
