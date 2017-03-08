@@ -26,7 +26,7 @@
         <sf:deploy 
             username="${username}" 
             password="${password}${securitytoken}" 
-            serverurl=ç 
+            serverurl="${serverurl}"
             maxPoll="${sf.maxPoll}" 
             pollWaitMillis="${sf.maxWaitMillis}" 
             deployRoot="${source}"
